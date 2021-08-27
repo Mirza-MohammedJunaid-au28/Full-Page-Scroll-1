@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Full Page Scroll</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <nav>
+                <ul>
+                    <li class="logo" href="#">Junaid</li>
+                    <li class="items"><a href="#home">Home</a></li>
+                    <li class="items"><a href="#about">About Us</a></li>
+                    <li class="items"><a href="#services">Services</a></li>
+                    <li class="items"><a href="#contact">Contact Us</a></li>
+                    <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+            <div class="content" id="home">
+                <div class="heading">Home</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur, dolor earum exercitationem, excepturi eveniet sit laudantium placeat et impedit sapiente minima explicabo commodi. Cumque sit consectetur quod facilis eum incidunt molestias ad quia quos ipsam. Distinctio voluptatum eum minus, consequuntur, inventore iusto nam amet soluta quaerat consectetur in ducimus quos! Facilis saepe voluptate dicta quos dolor quod, distinctio eaque nam beatae ducimus, doloremque sint natus reprehenderit quidem similique optio perspiciatis itaque aperiam cum autem molestias error laudantium quis! Magnam?</p>
+            </div>
+        </div>
+        <div class="section" id="about">
+            <div class="content">
+                <div class="heading">About Us</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur, dolor earum exercitationem, excepturi eveniet sit laudantium placeat et impedit sapiente minima explicabo commodi. Cumque sit consectetur quod facilis eum incidunt molestias ad quia quos ipsam. Distinctio voluptatum eum minus, consequuntur, inventore iusto nam amet soluta quaerat consectetur in ducimus quos! Facilis saepe voluptate dicta quos dolor quod, distinctio eaque nam beatae ducimus, doloremque sint natus reprehenderit quidem similique optio perspiciatis itaque aperiam cum autem molestias error laudantium quis! Magnam?</p>
+            </div>
+        </div>
+        <div class="section" id="services">
+            <div class="content">
+                <div class="heading">Services</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur, dolor earum exercitationem, excepturi eveniet sit laudantium placeat et impedit sapiente minima explicabo commodi. Cumque sit consectetur quod facilis eum incidunt molestias ad quia quos ipsam. Distinctio voluptatum eum minus, consequuntur, inventore iusto nam amet soluta quaerat consectetur in ducimus quos! Facilis saepe voluptate dicta quos dolor quod, distinctio eaque nam beatae ducimus, doloremque sint natus reprehenderit quidem similique optio perspiciatis itaque aperiam cum autem molestias error laudantium quis! Magnam?</p>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="content">
+                <div class="heading">Contact Us</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur, dolor earum exercitationem, excepturi eveniet sit laudantium placeat et impedit sapiente minima explicabo commodi. Cumque sit consectetur quod facilis eum incidunt molestias ad quia quos ipsam. Distinctio voluptatum eum minus, consequuntur, inventore iusto nam amet soluta quaerat consectetur in ducimus quos! Facilis saepe voluptate dicta quos dolor quod, distinctio eaque nam beatae ducimus, doloremque sint natus reprehenderit quidem similique optio perspiciatis itaque aperiam cum autem molestias error laudantium quis! Magnam?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</body>
+</html>
